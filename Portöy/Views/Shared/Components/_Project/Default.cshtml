@@ -1,4 +1,8 @@
-﻿<section class="projects section-padding" id="section_4">
+﻿
+@using EntityLayer.Concrete
+@model List<Project> 
+
+<section class="projects section-padding" id="section_4">
     <div class="container">
         <div class="row">
 
@@ -12,47 +16,24 @@
 
             <div class="clearfix"></div>
 
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="projects-thumb">
-                    <div class="projects-info">
-                        <small class="projects-tag">.NET CORE</small>
+            @foreach (var item in Model)
+            {
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="projects-thumb">
+                        <div class="projects-info">
+                            <small class="projects-tag">@item.ProjectTitle</small>
 
-                        <h3 class="projects-title">Kurumsal Mimari ile Blog Sitesi</h3>
+                            <h3 class="projects-title">@item.ProjectName</h3>
+                        </div>
+
+                        <a href="@item.ProjectImgUrl" class="popup-image">
+                            <img src="@item.ProjectImgUrl" class="projects-image img-fluid" alt="">
+                        </a>
                     </div>
-
-                    <a href="~/portföy/images/blog-1.png" class="popup-image">
-                        <img src="~/portföy/images/blog-1.png" class="projects-image img-fluid" alt="">
-                    </a>
                 </div>
-            </div>
+            }
 
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="projects-thumb">
-                    <div class="projects-info">
-                        <small class="projects-tag">.NET CORE</small>
 
-                        <h3 class="projects-title">Net Core Mvc ile 2 Vitrinli Klinik Sitesi</h3>
-                    </div>
-
-                    <a href="~/portföy/images/klinik.png" class="popup-image">
-                        <img src="~/portföy/images/klinik.png" class="projects-image img-fluid" alt="">
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="projects-thumb">
-                    <div class="projects-info">
-                        <small class="projects-tag">.NET CORE</small>
-
-                        <h3 class="projects-title">Yazar Paneli</h3>
-                    </div>
-
-                    <a href="images/projects/true-agency-9Bjog5FZ-oc-unsplash.jpg" class="popup-image">
-                        <img src="~/portföy/images/blog-8.png" class="projects-image img-fluid" alt="">
-                    </a>
-                </div>
-            </div>
 
         </div>
     </div>

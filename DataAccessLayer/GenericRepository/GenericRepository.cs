@@ -11,11 +11,11 @@ namespace DataAccessLayer.GenericRepository
     public class GenericRepository<Table> : IGenericDal<Table> where Table : class
     {
         Context baglan = new Context();
+
         public void ekle(Table eklenen)
         {
             baglan.Set<Table>().Add(eklenen);
             baglan.SaveChanges();
-
         }
 
         public Table GetId(int id)
@@ -31,12 +31,13 @@ namespace DataAccessLayer.GenericRepository
 
         public List<Table> Listele()
         {
-            throw new NotImplementedException();
+            return baglan.Set<Table>().ToList();
         }
 
         public void sil(Table silinen)
         {
-            throw new NotImplementedException();
+            baglan.Set<Table>().Remove(silinen);
+            baglan.SaveChanges();
         }
     }
 }

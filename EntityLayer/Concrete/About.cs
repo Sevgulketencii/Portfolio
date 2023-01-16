@@ -10,15 +10,16 @@ namespace EntityLayer.Concrete
     public class About
     {
         [Key]
-        public int ContactId { get; set; }
+        public int AboutId { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
         public string Phone { get; set; }
         public string Mail { get; set; }
         public string ImgUrl { get; set; }
+        public int WorkingYear { get; set; }
         public DateTime BirthDay { get; set; }
-        public string ContactTitle { get; set; }
-        public string ContactDesciription { get; set; }
-        public bool ContactStatus { get; set; }
+        public string AboutTitle { get; set; }
+        public string AboutDesciription { get; set; }
+        public bool AboutStatus { get; set; }
     }
 }

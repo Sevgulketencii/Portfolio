@@ -10,3 +10,9 @@ C:\Users\Sevgül KETENCİ\Source\Repos\Portföy\DataAccessLayer\obj\Debug\net5.0
 C:\Users\Sevgül KETENCİ\Source\Repos\Portföy\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.dll
 C:\Users\Sevgül KETENCİ\Source\Repos\Portföy\DataAccessLayer\obj\Debug\net5.0\ref\DataAccessLayer.dll
 C:\Users\Sevgül KETENCİ\Source\Repos\Portföy\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.pdb
+C:\Users\Sevgül KETENCİ\Source\Repos\Portföy\DataAccessLayer\bin\Debug\net5.0\DataAccessLayer.runtimeconfig.json
+C:\Users\Sevgül KETENCİ\Source\Repos\Portföy\DataAccessLayer\bin\Debug\net5.0\DataAccessLayer.runtimeconfig.dev.json
+C:\Users\Sevgül KETENCİ\Source\Repos\Portföy\DataAccessLayer\bin\Debug\net5.0\EntityLayer.dll
+C:\Users\Sevgül KETENCİ\Source\Repos\Portföy\DataAccessLayer\bin\Debug\net5.0\EntityLayer.pdb
+C:\Users\Sevgül KETENCİ\Source\Repos\Portföy\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.csproj.CopyComplete
+C:\Users\Sevgül KETENCİ\Source\Repos\Portföy\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.genruntimeconfig.cache

@@ -14,6 +14,7 @@ namespace DataAccessLayer.Concrete
         public DbSet<Contact> ContactDb{ get; set; }
         public DbSet<Language> LanguageDb{ get; set; }
         public DbSet<Project> ProjectDb{ get; set; }
+        public DbSet<Certificate> CertificateDb{ get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

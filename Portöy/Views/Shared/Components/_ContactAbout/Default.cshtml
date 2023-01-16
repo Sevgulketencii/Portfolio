@@ -1,4 +1,6 @@
-﻿
+﻿@using EntityLayer.Concrete
+@model About
+
 <div class="clearfix"></div>
 
 <div class="col-lg-3 col-md-6 col-12 pe-lg-0">
@@ -44,7 +46,7 @@
 
         <p>
             <a href="mailto:ketenci2554@gmail.com">
-                ketenci2554@gmail.com
+                @Model.Mail
             </a>
         </p>
 
@@ -52,7 +54,7 @@
 
         <p class="mb-0">
             <a href="tel: 536-604-5465">
-                +90 536-604-5465
+                +90 @Model.Phone
             </a>
         </p>
     </div>

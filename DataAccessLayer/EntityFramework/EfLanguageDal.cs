@@ -1,4 +1,5 @@
-﻿using DataAccessLayer.GenericRepository;
+﻿using DataAccessLayer.Abstract;
+using DataAccessLayer.GenericRepository;
 using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.EntityFramework
 {
-    public class EfLanguageDal:GenericRepository<Language>
+    public class EfLanguageDal:GenericRepository<Language>,ILanguageDal
     {
     }
 }

@@ -1,35 +1,21 @@
-﻿<section class="clients section-padding">
+﻿@using EntityLayer.Concrete
+@model List<Language> 
+
+<section class="clients section-padding">
     <div class="container">
         <div class="row align-items-center">
-
+          
             <div class="col-lg-12 col-12">
                 <h3 class="text-center mb-5">Kullanılan Teknolojiler</h3>
             </div>
+           
+            @foreach (var item in Model)
+            {
+                <div class="col-lg-2 col-4 clients-item-height">
+                    <img src="@item.LanguageImgUrl" class="clients-image img-fluid" alt="">
+                </div>
+            }
 
-            <div class="col-lg-2 col-4 clients-item-height">
-                <img src="~/portföy/images/c-sharp-c-seeklogo.com.svg" class="clients-image img-fluid" alt="">
-            </div>
-
-            <div class="col-lg-2 col-4 ms-auto clients-item-height">
-                <img src="~/portföy/images/netCore.png" class="clients-image img-fluid" alt="">
-            </div>
-
-            <div class="col-lg-2 col-4 clients-item-height">
-                <img src="~/portföy/images/mssql.png" class="clients-image img-fluid" alt="">
-            </div>
-
-            <div class="col-lg-2 col-4 clients-item-height">
-                <img src="~/portföy/images/pngegg.png" class="clients-image img-fluid" alt="">
-            </div>
-
-
-            <div class="col-lg-2 col-4 me-auto clients-item-height">
-                <img src="~/portföy/images/html.png" class="clients-image img-fluid" alt="">
-            </div>
-
-            <div class="col-lg-2 col-4 me-auto clients-item-height">
-                <img src="~/portföy/images/css.png" class="clients-image img-fluid" alt="">
-            </div>
         </div>
     </div>
 </section>
