@@ -1,0 +1,31 @@
+﻿
+
+@using EntityLayer.Concrete
+@model List<Contact>
+
+<div class="noti__item js-item-menu">
+    <i class="zmdi zmdi-email"></i>
+    <span class="quantity">1</span>
+    <div class="email-dropdown js-dropdown">
+        <div class="email__title">
+            <p>Okunmayan 1 İleti</p>
+        </div>
+        @foreach (var item in Model)
+        {
+            <div class="email__item">
+                <div class="image img-cir img-40">
+                    <img src="~/Admin/images/icon/user.png" />
+                </div>
+                <div class="content">
+                    <p>@item.ContactMail</p>
+                    <span>@item.ContactName, 1 min ago</span>
+                </div>
+            </div>
+        }
+
+
+        <div class="email__footer">
+            <a href="#">Mesajların Tümünü Gör</a>
+        </div>
+    </div>
+</div>

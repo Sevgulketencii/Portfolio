@@ -1,0 +1,39 @@
+﻿
+@{
+    Layout = null;
+}
+@using EntityLayer.Concrete
+@model List<Project>
+
+
+<div class="col-lg-9">
+    <h2 class="title-1 m-b-25">Proje Tablosu</h2>
+    <div class="table-responsive table--no-card m-b-40">
+        <table class="table table-borderless table-striped table-earning">
+            <thead>
+                <tr>
+
+                    <th>Proje Id</th>
+                    <th>Proje Adı</th>
+                    <th>Tarih</th>
+                    <th class="text-right">Statü</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.ProjectId </td>
+                        <td>@item.ProjectName</td>
+                        <td>@item.ProjectDate.ToShortDateString()</td>
+                        <td class="text-right">@item.ProjectStatus</td>
+
+                    </tr>
+                }
+
+
+            </tbody>
+        </table>
+    </div>
+</div>
+

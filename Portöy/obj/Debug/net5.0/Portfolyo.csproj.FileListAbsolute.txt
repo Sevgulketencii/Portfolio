@@ -441,3 +441,13 @@ C:\Users\Sevgül KETENCİ\Source\Repos\Portföy\Portöy\bin\Debug\net5.0\Busines
 C:\Users\Sevgül KETENCİ\Source\Repos\Portföy\Portöy\bin\Debug\net5.0\DataAccessLayer.pdb
 C:\Users\Sevgül KETENCİ\Source\Repos\Portföy\Portöy\bin\Debug\net5.0\EntityLayer.pdb
 C:\Users\Sevgül KETENCİ\Source\Repos\Portföy\Portöy\obj\Debug\net5.0\Razor\Views\Shared\Components\_UserData\Default.cshtml.g.cs
+C:\Users\Sevgül KETENCİ\Source\Repos\Portföy\Portöy\obj\Debug\net5.0\Razor\Areas\Admin\Views\Admin\Index.cshtml.g.cs
+C:\Users\Sevgül KETENCİ\Source\Repos\Portföy\Portöy\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\_AdminHeaderBar.cshtml.g.cs
+C:\Users\Sevgül KETENCİ\Source\Repos\Portföy\Portöy\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\_AdminLayout.cshtml.g.cs
+C:\Users\Sevgül KETENCİ\Source\Repos\Portföy\Portöy\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\_AdminNavbar.cshtml.g.cs
+C:\Users\Sevgül KETENCİ\Source\Repos\Portföy\Portöy\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\Components\_Widgets\Default.cshtml.g.cs
+C:\Users\Sevgül KETENCİ\Source\Repos\Portföy\Portöy\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\Components\_ProjectTable\Default.cshtml.g.cs
+C:\Users\Sevgül KETENCİ\Source\Repos\Portföy\Portöy\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\Components\_Certificate\Default.cshtml.g.cs
+C:\Users\Sevgül KETENCİ\Source\Repos\Portföy\Portöy\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\Components\_Message\Default.cshtml.g.cs
+C:\Users\Sevgül KETENCİ\Source\Repos\Portföy\Portöy\obj\Debug\net5.0\Razor\Areas\Admin\Views\Admin\Certificate.cshtml.g.cs
+C:\Users\Sevgül KETENCİ\Source\Repos\Portföy\Portöy\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\_ViewImports.cshtml.g.cs

@@ -14,6 +14,7 @@ namespace EntityLayer.Concrete
         public string ContactName { get; set; }
         public string ContactSurname { get; set; }
         public string ContactMail { get; set; }
+        public string ContactTitle { get; set; }
         public string ContactMessage { get; set; }
         public bool ContactStatus { get; set; }
     }

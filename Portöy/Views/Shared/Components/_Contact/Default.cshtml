@@ -1,17 +1,20 @@
-﻿<div class="col-lg-6 col-12 mt-5 mt-lg-0">
-    <form action="#" method="get" class="custom-form contact-form" role="form">
+﻿@using EntityLayer.Concrete
+@model Contact
+
+<div class="col-lg-6 col-12 mt-5 mt-lg-0">
+    <form asp-controller="Contact" asp-action="Contact" method="post" class="custom-form contact-form" role="form">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-12">
                 <div class="form-floating">
-                    <input type="text" name="name" id="name" class="form-control" required="">
+                    <input type="text" name="ContactName"  class="form-control" >
 
-                    <label for="floatingInput">Adınız</label>
+                    <label >Adınız</label>
                 </div>
             </div>
 
             <div class="col-lg-6 col-md-6 col-12">
                 <div class="form-floating">
-                    <input type="email" name="email" id="email" pattern="" class="form-control" required="">
+                    <input type="text" name="ContactSurname"   class="form-control" >
 
                     <label for="floatingInput">Soyadınız</label>
                 </div>
@@ -19,7 +22,7 @@
 
             <div class="col-lg-12 col-md-12 col-12">
                 <div class="form-floating">
-                    <input type="email" name="email" id="email" pattern="" class="form-control" required="">
+                    <input type="email" name="ContactMail"  class="form-control" >
 
                     <label for="floatingInput">Email adresiniz</label>
                 </div>
@@ -27,7 +30,7 @@
 
             <div class="col-lg-12 col-md-12 col-12">
                 <div class="form-floating">
-                    <input type="email" name="email" id="email" pattern="" class="form-control" required="">
+                    <input type="text" name="ContactTitle"  class="form-control">
 
                     <label for="floatingInput">Konu Başlığı</label>
                 </div>
@@ -79,7 +82,7 @@
 
             <div class="col-lg-12 col-12">
                 <div class="form-floating">
-                    <textarea class="form-control" id="message" name="message"></textarea>
+                    <textarea class="form-control"  name="ContactMessage"></textarea>
 
                     <label for="floatingTextarea">Mesajınız</label>
                 </div>

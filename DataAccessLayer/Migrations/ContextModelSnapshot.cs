@@ -107,6 +107,9 @@ namespace DataAccessLayer.Migrations
                     b.Property<string>("ContactSurname")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("ContactTitle")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("ContactId");
 
                     b.ToTable("ContactDb");
