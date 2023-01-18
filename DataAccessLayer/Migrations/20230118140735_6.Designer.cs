@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataAccessLayer.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20230116191202_mig_2")]
-    partial class mig_2
+    [Migration("20230118140735_6")]
+    partial class _6
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -55,9 +55,39 @@ namespace DataAccessLayer.Migrations
                     b.Property<string>("Surname")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("WorkingYear")
+                        .HasColumnType("int");
+
                     b.HasKey("AboutId");
 
                     b.ToTable("AboutDb");
+                });
+
+            modelBuilder.Entity("EntityLayer.Concrete.Certificate", b =>
+                {
+                    b.Property<int>("CertificateId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("CertificateImgUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CertificateName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CertificateStatus")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CertificateUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Company")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("CertificateId");
+
+                    b.ToTable("CertificateDb");
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.Contact", b =>
@@ -80,6 +110,9 @@ namespace DataAccessLayer.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("ContactSurname")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ContactTitle")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ContactId");

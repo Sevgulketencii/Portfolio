@@ -449,5 +449,11 @@ C:\Users\Sevgül KETENCİ\Source\Repos\Portföy\Portöy\obj\Debug\net5.0\Razor\A
 C:\Users\Sevgül KETENCİ\Source\Repos\Portföy\Portöy\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\Components\_ProjectTable\Default.cshtml.g.cs
 C:\Users\Sevgül KETENCİ\Source\Repos\Portföy\Portöy\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\Components\_Certificate\Default.cshtml.g.cs
 C:\Users\Sevgül KETENCİ\Source\Repos\Portföy\Portöy\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\Components\_Message\Default.cshtml.g.cs
-C:\Users\Sevgül KETENCİ\Source\Repos\Portföy\Portöy\obj\Debug\net5.0\Razor\Areas\Admin\Views\Admin\Certificate.cshtml.g.cs
 C:\Users\Sevgül KETENCİ\Source\Repos\Portföy\Portöy\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\_ViewImports.cshtml.g.cs
+C:\Users\Sevgül KETENCİ\Source\Repos\Portföy\Portöy\obj\Debug\net5.0\Razor\Areas\Admin\Views\Certificate\Certificate.cshtml.g.cs
+C:\Users\Sevgül KETENCİ\Source\Repos\Portföy\Portöy\obj\Debug\net5.0\Razor\Areas\Admin\Views\Certificate\Update.cshtml.g.cs
+C:\Users\Sevgül KETENCİ\Source\Repos\Portföy\Portöy\obj\Debug\net5.0\Razor\Areas\Admin\Views\Certificate\CertificateAdd.cshtml.g.cs
+C:\Users\Sevgül KETENCİ\Source\Repos\Portföy\Portöy\obj\Debug\net5.0\Razor\Areas\Admin\Views\Language\Language.cshtml.g.cs
+C:\Users\Sevgül KETENCİ\Source\Repos\Portföy\Portöy\obj\Debug\net5.0\Razor\Areas\Admin\Views\Language\Update.cshtml.g.cs
+C:\Users\Sevgül KETENCİ\Source\Repos\Portföy\Portöy\obj\Debug\net5.0\Razor\Areas\Admin\Views\Language\LanguageAdd.cshtml.g.cs
+C:\Users\Sevgül KETENCİ\Source\Repos\Portföy\Portöy\obj\Debug\net5.0\Razor\Areas\Admin\Views\About\About.cshtml.g.cs

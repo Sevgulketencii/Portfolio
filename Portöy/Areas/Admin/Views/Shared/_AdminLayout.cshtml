@@ -58,7 +58,7 @@
       it leads to odd behaviors like loading 'undefined'
       moving the class to menus lead to only the menu having the effect -->
 <body class="animsition">
-    <div class="page-wrapper">
+ 
     
         <aside class="menu-sidebar d-none d-lg-block">
             <div class="logo">
@@ -74,19 +74,20 @@
         <!-- PAGE CONTAINER-->
         <div class="page-container">
             <!-- HEADER DESKTOP-->
-            @Html.Partial("_AdminHeaderBar")
-            <!-- END HEADER DESKTOP-->
-            <!-- MAIN CONTENT-->
-          
-                
-                    <div class="container-fluid">
-                        @RenderBody()
+            
+                @Html.Partial("_AdminHeaderBar")
+                <!-- END HEADER DESKTOP-->
+                <!-- MAIN CONTENT-->
 
-                    </div>
-           
+
+                <div class="container-fluid">
+                    @RenderBody()
+
+                </div>
+            
         </div>
 
-    </div>
+    
 
     <!-- Jquery JS-->
     <script src="~/Admin/vendor/jquery-3.2.1.min.js"></script>

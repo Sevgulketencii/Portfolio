@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewData["Title"] = "Language";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+@using EntityLayer.Concrete
+@model List<Language>
+<div class="table-responsive m-b-40" style="margin-top:200px">
+    <table class="table table-borderless table-data3">
+        <thead>
+            <tr>
+                <th>Teknoloji Id</th>
+                <th>Teknoloji Adı</th>
+                <th>Teknoloji Img Url</th>
+                <th>Teknoloji Statü</th>
+                <th>Güncelle</th>
+                <th>Sil</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.LanguageId</td>
+                    <td>@item.LanguageName</td>
+                    <td>@item.LanguageImgUrl</td>
+
+                    @if (item.LanguageStatus == true)
+                    {
+                        <td class="process">Aktif</td>
+                    }
+                    else
+                    {
+                        <td class="denied">Pasif</td>
+                    }
+                    <td><a href="/Admin/Language/Update/@item.LanguageId" class="btn btn-warning btn-sm">Güncelle</a></td>
+                    <td><a href="/Admin/Language/Delete/@item.LanguageId" class="btn btn-danger btn-sm">Sil</a></td>
+                </tr>
+            }
+
+        </tbody>
+    </table><br />
+    <a href="/Admin/Language/LanguageAdd" class="btn btn-success btn-block">Ekle</a>
+
+</div>
+
+

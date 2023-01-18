@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewData["Title"] = "CertificateAdd";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="col-lg-12" style="margin-block:225px">
+    <div class="card">
+        <div class="card-header">Sertifika</div>
+        <div class="card-body">
+            <div class="card-title">
+                <h3 class="text-center title-2">Eklenen Sertifika</h3>
+            </div>
+            <hr>
+            <form action="/Admin/Certificate/CertificateAdd" method="post" >
+                <div class="form-group">
+                    <label for="cc-payment" class="control-label mb-1">Sertifika Adı</label>
+                    <input name="CertificateName" type="text" class="form-control" >
+                </div>
+                <div class="form-group">
+                    <label for="cc-payment" class="control-label mb-1">Sertifika Alınan Kurum</label>
+                    <input name="CertificateCompany" type="text" class="form-control" >
+                </div>
+                <div class="form-group">
+                    <label for="cc-payment" class="control-label mb-1">Sertifika Yeterlilik Url </label>
+                    <input name="CertificateUrl" type="text" class="form-control" >
+                </div>
+                <div class="form-group">
+                    <label for="cc-payment" class="control-label mb-1">Sertifika Img Url </label>
+                    <input name="CertificateImgUrl" type="text" class="form-control" >
+                </div>
+                <div>
+                    <button id="payment-button" type="submit" class="btn btn-lg btn-success btn-block" style="margin-block :20px">
+                        <i class="fa fa-save fa-lg"></i>&nbsp;
+                        <span id="payment-button-amount">Ekle</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+

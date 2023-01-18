@@ -74,10 +74,13 @@ namespace DataAccessLayer.Migrations
                     b.Property<string>("CertificateName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("CertificateStatus")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<bool>("CertificateStatus")
+                        .HasColumnType("bit");
 
                     b.Property<string>("CertificateUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Company")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("CertificateId");

@@ -4,14 +4,14 @@
 <nav class="navbar-sidebar">
     <ul class="list-unstyled navbar__list">
 
-        <li class="active">
+        <li>
             <a asp-area="Admin" asp-controller="Admin" asp-action="Index">
                 <i class="fas fa-database"></i>DashBoard
             </a>
         </li>
 
         <li>
-            <a asp-area="Admin" asp-controller="Admin" asp-action="Certificate">
+            <a asp-area="Admin" asp-controller="Certificate" asp-action="Certificate">
                 <i class="fas fa-calendar-alt"></i>Sertifika
             </a>
         </li>
@@ -23,17 +23,22 @@
         </li>
 
         <li>
-            <a href="map.html">
-                <i class="fas fa-laptop"></i>Teknoloji
+            <a asp-area="Admin" asp-controller="Language" asp-action="Language">
+                <i class="fas fa-laptop"></i>Teknolojiler
             </a>
         </li>
 
         <li>
-            <a href="map.html">
+            <a asp-area="Admin" asp-controller="About" asp-action="About">
                 <i class="fas fa-user"></i>Hakkında
             </a>
         </li>
 
+        <li>
+            <a  href="/Home/Index">
+                <i class="fas fa-reply"  ></i>Siteye Dön
+            </a>
+        </li>
 
     </ul>
 </nav>

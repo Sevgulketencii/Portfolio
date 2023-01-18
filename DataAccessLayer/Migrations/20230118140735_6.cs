@@ -2,13 +2,13 @@
 
 namespace DataAccessLayer.Migrations
 {
-    public partial class mig_aa5a : Migration
+    public partial class _6 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AddColumn<string>(
-                name: "ContactTitle",
-                table: "ContactDb",
+                name: "Company",
+                table: "CertificateDb",
                 type: "nvarchar(max)",
                 nullable: true);
         }
@@ -16,8 +16,8 @@ namespace DataAccessLayer.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropColumn(
-                name: "ContactTitle",
-                table: "ContactDb");
+                name: "Company",
+                table: "CertificateDb");
         }
     }
 }

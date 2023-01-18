@@ -14,6 +14,8 @@ namespace EntityLayer.Concrete
         public string CertificateName { get; set; }
         public string CertificateUrl { get; set; }
         public string CertificateImgUrl { get; set; }
-        public string CertificateStatus { get; set; }
+        public bool CertificateStatus { get; set; }
+        public string Company { get; set; }
+
     }
 }

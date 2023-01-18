@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataAccessLayer.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20230116201907_mig_3")]
-    partial class mig_3
+    [Migration("20230118141035_1")]
+    partial class _1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -63,6 +63,33 @@ namespace DataAccessLayer.Migrations
                     b.ToTable("AboutDb");
                 });
 
+            modelBuilder.Entity("EntityLayer.Concrete.Certificate", b =>
+                {
+                    b.Property<int>("CertificateId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("CertificateImgUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CertificateName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("CertificateStatus")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("CertificateUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Company")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("CertificateId");
+
+                    b.ToTable("CertificateDb");
+                });
+
             modelBuilder.Entity("EntityLayer.Concrete.Contact", b =>
                 {
                     b.Property<int>("ContactId")
@@ -83,6 +110,9 @@ namespace DataAccessLayer.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("ContactSurname")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ContactTitle")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ContactId");

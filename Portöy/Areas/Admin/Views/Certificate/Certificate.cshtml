@@ -1,0 +1,78 @@
+﻿
+@{
+    ViewData["Title"] = "Certificate";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+
+}
+@using EntityLayer.Concrete
+@model List<Certificate>
+
+<div class="table-responsive m-b-40" style="margin-top:100px">
+    <table class="table table-borderless table-data3">
+        <thead>
+            <tr>
+                <th>Sertifika Id</th>
+                <th>Sertifika Adı</th>
+                <th>Sertifika Alınan Kurum</th>
+                <th>Yeterlilik URL</th>
+                <th>Statü</th>
+                <th>Güncelle</th>
+                <th>Sil</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td>@item.CertificateId</td>
+                <td>@item.CertificateName</td>
+                <td>@item.Company</td>
+                <td>@item.CertificateUrl</td>
+                @if (item.CertificateStatus == true)
+                {
+                    <td class="process">Aktif</td>
+                }
+                else
+                {
+                    <td class="denied">Pasif</td>
+                }
+                <td><a href="/Admin/Certificate/Update/@item.CertificateId" class="btn btn-warning btn-sm">Güncelle</a></td>
+                <td><a href="/Admin/Certificate/Delete/@item.CertificateId" class="btn btn-danger btn-sm">Sil</a></td>
+            </tr>
+            }
+
+        </tbody>
+    </table><br />
+
+    <a href="/Admin/Certificate/CertificateAdd" class="btn btn-success btn-block">Ekle</a>
+
+</div>
+
+<div class="main-content">
+    <div class="section__content section__content--p30">
+        <div class="container-fluid">
+            <div class="row">
+                @foreach (var item in Model)
+                {
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="@item.CertificateImgUrl" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title mb-3">@item.CertificateName</h4>
+                                <p class="card-text">
+                                    @item.Company
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
