@@ -1,4 +1,5 @@
 ﻿using EntityLayer.Concrete;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -15,10 +16,11 @@ namespace DataAccessLayer.Concrete
         public DbSet<Language> LanguageDb{ get; set; }
         public DbSet<Project> ProjectDb{ get; set; }
         public DbSet<Certificate> CertificateDb{ get; set; }
+        public DbSet<Admin> AdminDb{ get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server=DESKTOP-KCH0A99;database=Portfolyo;integrated security=true");
+            optionsBuilder.UseSqlServer("server=DESKTOP-KCH0A99;database=PortfolyoDb;integrated security=true");
         }
     }
 }

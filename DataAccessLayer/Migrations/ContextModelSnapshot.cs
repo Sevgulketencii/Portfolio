@@ -61,6 +61,19 @@ namespace DataAccessLayer.Migrations
                     b.ToTable("AboutDb");
                 });
 
+            modelBuilder.Entity("EntityLayer.Concrete.Admin", b =>
+                {
+                    b.Property<string>("username")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("pasword")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("username");
+
+                    b.ToTable("AdminDb");
+                });
+
             modelBuilder.Entity("EntityLayer.Concrete.Certificate", b =>
                 {
                     b.Property<int>("CertificateId")
@@ -167,6 +180,9 @@ namespace DataAccessLayer.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("ProjectTitle")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ProjectUrl")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ProjectId");

@@ -16,6 +16,7 @@ namespace EntityLayer.Concrete
         public string ProjectDescription { get; set; }
         public DateTime ProjectDate { get; set; }
         public string ProjectImgUrl { get; set; }
+        public string ProjectUrl { get; set; }
         public bool ProjectStatus { get; set; }
         public virtual IList<Language> Liste { get; set; }
     }
