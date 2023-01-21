@@ -9,5 +9,6 @@ namespace DataAccessLayer.Abstract
 {
     public interface ILanguageDal:IGenericDal<Language>
     {
+        List<Language> ListOnay();
     }
 }

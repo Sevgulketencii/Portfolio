@@ -30,7 +30,7 @@ namespace BusinessLayer.Concrete
 
         public List<Contact> HeaderContact()
         {
-            return _contact.HeaderContact(x => x.ContactStatus == true);
+            return _contact.HeaderContact();
         }
 
         public Contact IdGore(int id)

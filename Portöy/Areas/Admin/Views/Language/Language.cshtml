@@ -14,28 +14,32 @@
                 <th>Teknoloji Img Url</th>
                 <th>Teknoloji Statü</th>
                 <th>Güncelle</th>
+                <th>Yayına Al</th>
+                <th>Yayından Kaldır</th>
                 <th>Sil</th>
             </tr>
         </thead>
         <tbody>
             @foreach (var item in Model)
             {
-                <tr>
-                    <td>@item.LanguageId</td>
-                    <td>@item.LanguageName</td>
-                    <td>@item.LanguageImgUrl</td>
+            <tr>
+                <td>@item.LanguageId</td>
+                <td>@item.LanguageName</td>
+                <td>@item.LanguageImgUrl</td>
 
-                    @if (item.LanguageStatus == true)
-                    {
-                        <td class="process">Aktif</td>
-                    }
-                    else
-                    {
-                        <td class="denied">Pasif</td>
-                    }
-                    <td><a href="/Admin/Language/Update/@item.LanguageId" class="btn btn-warning btn-sm">Güncelle</a></td>
-                    <td><a href="/Admin/Language/Delete/@item.LanguageId" class="btn btn-danger btn-sm">Sil</a></td>
-                </tr>
+                @if (item.LanguageStatus == true)
+                {
+                    <td class="process">Aktif</td>
+                }
+                else
+                {
+                    <td class="denied">Pasif</td>
+                }
+                <td><a href="/Admin/Language/Update/@item.LanguageId" class="btn btn-primary btn-sm">Güncelle</a></td>
+                <td><a href="/Admin/Language/StatuTrue/@item.LanguageId" class="btn btn-info btn-sm">Aktif</a></td>
+                <td><a href="/Admin/Language/StatuFalse/@item.LanguageId" class="btn btn-warning btn-sm">Pasif</a></td>
+                <td><a href="/Admin/Language/Delete/@item.LanguageId" class="btn btn-danger btn-sm">Sil</a></td>
+            </tr>
             }
 
         </tbody>

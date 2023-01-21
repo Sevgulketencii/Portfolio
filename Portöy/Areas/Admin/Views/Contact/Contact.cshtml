@@ -15,29 +15,32 @@
                 <th>Mesaj Başlık</th>
                 <th>Alınan Mesaj</th>
                 <th>Okunma Bilgisi</th>
+                <th>Okundu İşaretle</th>
+                <th>Sil</th>
 
             </tr>
         </thead>
         <tbody>
             @foreach (var item in Model)
             {
-            <tr>
-                <td>@item.ContactId</td>
-                <td>@item.ContactName @item.ContactSurname</td>
-                <td>@item.ContactMail</td>
-                <td>@item.ContactTitle</td>
-                <td>@item.ContactMessage</td>
-                @if (item.ContactStatus == true)
-                {
-                    <td class="denied">OKUNMADI</td>
-                }
-                else
-                {
-                    <td class="process">OKUNDU</td>
-                }
-                
+                <tr>
+                    <td>@item.ContactId</td>
+                    <td>@item.ContactName @item.ContactSurname</td>
+                    <td>@item.ContactMail</td>
+                    <td>@item.ContactTitle</td>
+                    <td>@item.ContactMessage</td>
+                    @if (item.ContactStatus == true)
+                    {
+                        <td class="denied">OKUNMADI</td>
+                    }
+                    else
+                    {
+                        <td class="process">OKUNDU</td>
+                    }
+                    <td><a href="/Admin/Contact/Read/@item.ContactId" class="btn btn-success btn-sm">Okundu Olarak İşaretle</a></td>
+                    <td><a href="/Admin/Contact/Delete/@item.ContactId" class="btn btn-danger btn-sm">Mesajı Sil</a></td>
 
-            </tr>
+                </tr>
             }
 
         </tbody>
@@ -48,42 +51,28 @@
 </div>
 
 <h1 style="text-align:center">iLETİŞİM KURANLAR</h1>
-@foreach (var item in Model)
-	{
-<div class="col-md-3" style="margin-top:50px">
-    <aside class="profile-nav alt">
-        <section class="card">
-            <div class="card-header user-header alt bg-dark">
-                <div class="media">
-                    <a href="#">
-                        <img class="align-self-center rounded-circle mr-3" style="width:85px; height:85px;" alt="" src="~/Admin/images/icon/avatar-01.jpg">
-                    </a>
-                    <div class="media-body">
-                        <h2 class="text-light display-6">@item.ContactName @item.ContactSurname</h2>
-                        
+<div class="main-content">
+    <div class="section__content section__content--p30">
+        <div class="container-fluid">
+            <div class="row">
+                @foreach (var item in Model)
+                {
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="/Admin/images/icon/user.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title mb-3">@item.ContactName @item.ContactSurname</h4>
+                                <p class="card-text">
+                                    @item.ContactMessage
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                }
+
             </div>
-
-
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                    <a href="#">
-                        <i class="fa fa-send"></i><p>@item.ContactMail</p>
-                    </a>
-                </li>
-                <li class="list-group-item">
-                    <a href="#">
-                        <i class="fa fa-facebook-messenger"></i>Konu Başlığı: @item.ContactTitle
-                        <span class="badge badge-danger pull-right"></span>
-                    </a>
-                </li>
-               
-            </ul>
-
-        </section>
-    </aside>
+        </div>
+    </div>
 </div>
-	}
 
-        
+

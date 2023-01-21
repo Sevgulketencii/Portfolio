@@ -38,6 +38,11 @@ namespace BusinessLayer.Concrete
             return _certificate.Listele();
         }
 
+        public List<Certificate> ListeOnay()
+        {
+            return _certificate.ListeOnay();
+        }
+
         public void sil(Certificate silinen)
         {
             _certificate.sil(silinen);

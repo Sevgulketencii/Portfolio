@@ -1,97 +1,106 @@
 ﻿@using EntityLayer.Concrete
 @model Contact
 
-<div class="col-lg-6 col-12 mt-5 mt-lg-0">
-    <form asp-controller="Contact" asp-action="Contact" method="post" class="custom-form contact-form" role="form">
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-12">
-                <div class="form-floating">
-                    <input type="text" name="ContactName"  class="form-control" >
-
-                    <label >Adınız</label>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="~/portföy/js/jquery.min.js"></script>
+    <div class="col-lg-6 col-12 mt-5 mt-lg-0">
+        <form asp-controller="Contact" asp-action="Contact" method="post" class="custom-form contact-form" role="form">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="form-floating">
+                        <input type="text" name="ContactName" class="form-control">
+                        <span asp-validation-for="ContactName"></span>
+                        <label>Adınız</label>
+                    </div>
                 </div>
-            </div>
 
-            <div class="col-lg-6 col-md-6 col-12">
-                <div class="form-floating">
-                    <input type="text" name="ContactSurname"   class="form-control" >
-
-                    <label for="floatingInput">Soyadınız</label>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="form-floating">
+                        <input type="text" name="ContactSurname" class="form-control">
+                        <span asp-validation-for="ContactSurname"></span>
+                        <label for="floatingInput">Soyadınız</label>
+                    </div>
                 </div>
-            </div>
 
-            <div class="col-lg-12 col-md-12 col-12">
-                <div class="form-floating">
-                    <input type="email" name="ContactMail"  class="form-control" >
-
-                    <label for="floatingInput">Email adresiniz</label>
+                <div class="col-lg-12 col-md-12 col-12">
+                    <div class="form-floating">
+                        <input type="email" name="ContactMail" class="form-control">
+                        <span asp-validation-for="ContactMail"></span>
+                        <label for="floatingInput">Email adresiniz</label>
+                    </div>
                 </div>
-            </div>
 
-            <div class="col-lg-12 col-md-12 col-12">
-                <div class="form-floating">
-                    <input type="text" name="ContactTitle"  class="form-control">
-
-                    <label for="floatingInput">Konu Başlığı</label>
+                <div class="col-lg-12 col-md-12 col-12">
+                    <div class="form-floating">
+                        <input type="text" name="ContactTitle" class="form-control">
+                        <span asp-validation-for="ContactTitle"></span>
+                        <label for="floatingInput">Konu Başlığı</label>
+                    </div>
                 </div>
-            </div>
 
-            @*<div class="col-lg-3 col-md-6 col-6">
-            <div class="form-check form-check-inline">
-                <input name="website" type="checkbox" class="form-check-input" id="inlineCheckbox1" value="1">
+                @*<div class="col-lg-3 col-md-6 col-6">
+                        <div class="form-check form-check-inline">
+                            <input name="website" type="checkbox" class="form-check-input" id="inlineCheckbox1" value="1">
 
-                <label class="form-check-label" for="inlineCheckbox1">
-                    <i class="bi-globe form-check-icon"></i>
-                    <span class="form-check-label-text">Websites</span>
-                </label>
-            </div>
-        </div>
+                            <label class="form-check-label" for="inlineCheckbox1">
+                                <i class="bi-globe form-check-icon"></i>
+                                <span class="form-check-label-text">Websites</span>
+                            </label>
+                        </div>
+                    </div>
 
-        <div class="col-lg-3 col-md-6 col-6">
-            <div class="form-check form-check-inline">
-                <input name="branding" type="checkbox" class="form-check-input" id="inlineCheckbox2" value="1">
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="form-check form-check-inline">
+                            <input name="branding" type="checkbox" class="form-check-input" id="inlineCheckbox2" value="1">
 
-                <label class="form-check-label" for="inlineCheckbox2">
-                    <i class="bi-lightbulb form-check-icon"></i>
-                    <span class="form-check-label-text">Branding</span>
-                </label>
-            </div>
-        </div>
+                            <label class="form-check-label" for="inlineCheckbox2">
+                                <i class="bi-lightbulb form-check-icon"></i>
+                                <span class="form-check-label-text">Branding</span>
+                            </label>
+                        </div>
+                    </div>
 
-        <div class="col-lg-3 col-md-6 col-6">
-            <div class="form-check form-check-inline">
-                <input name="ecommerce" type="checkbox" class="form-check-input" id="inlineCheckbox3" value="1">
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="form-check form-check-inline">
+                            <input name="ecommerce" type="checkbox" class="form-check-input" id="inlineCheckbox3" value="1">
 
-                <label class="form-check-label" for="inlineCheckbox3">
-                    <i class="bi-phone form-check-icon"></i>
-                    <span class="form-check-label-text">Ecommerce</span>
-                </label>
-            </div>
-        </div>
+                            <label class="form-check-label" for="inlineCheckbox3">
+                                <i class="bi-phone form-check-icon"></i>
+                                <span class="form-check-label-text">Ecommerce</span>
+                            </label>
+                        </div>
+                    </div>
 
-        <div class="col-lg-3 col-md-6 col-6">
-            <div class="form-check form-check-inline me-0">
-                <input name="seo" type="checkbox" class="form-check-input" id="inlineCheckbox4" value="1">
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="form-check form-check-inline me-0">
+                            <input name="seo" type="checkbox" class="form-check-input" id="inlineCheckbox4" value="1">
 
-                <label class="form-check-label" for="inlineCheckbox4">
-                    <i class="bi-google form-check-icon"></i>
-                    <span class="form-check-label-text">SEO</span>
-                </label>
-            </div>
-        </div>*@
+                            <label class="form-check-label" for="inlineCheckbox4">
+                                <i class="bi-google form-check-icon"></i>
+                                <span class="form-check-label-text">SEO</span>
+                            </label>
+                        </div>
+                    </div>*@
 
-            <div class="col-lg-12 col-12">
-                <div class="form-floating">
-                    <textarea class="form-control"  name="ContactMessage"></textarea>
-
-                    <label for="floatingTextarea">Mesajınız</label>
+                <div class="col-lg-12 col-12">
+                    <div class="form-floating">
+                        <textarea class="form-control" name="ContactMessage"></textarea>
+                        <span asp-validation-for="ContactMessage"></span>
+                        <label for="floatingTextarea">Mesajınız</label>
+                    </div>
                 </div>
-            </div>
 
-            <div class="col-lg-3 col-12 ms-auto">
-                <button type="submit" class="form-control">Gönder</button>
-            </div>
+                <div class="col-lg-3 col-12 ms-auto">
+                    <button type="submit" id="btn1" class="form-control">Gönder</button>
+                
 
-        </div>
-    </form>
-</div>
+                            
+   
+
+                    
+
+                </div>
+
+            </div>
+        </form>
+    </div>

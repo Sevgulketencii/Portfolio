@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\Sevgül KETENCİ\Desktop\WebSitePortföy</_PublishTargetUrl>
+    <History>True|2023-01-21T14:37:01.1217545Z;True|2023-01-21T14:44:50.1612382+03:00;True|2023-01-21T14:05:08.6575899+03:00;True|2023-01-20T20:26:04.6147450+03:00;True|2023-01-20T15:09:06.6353664+03:00;True|2023-01-20T14:56:34.8745148+03:00;True|2023-01-20T01:23:05.3699463+03:00;True|2023-01-20T00:43:39.6601179+03:00;False|2023-01-20T00:42:01.3780135+03:00;True|2023-01-19T23:42:39.1540848+03:00;</History>
+  </PropertyGroup>
+</Project>

@@ -324,8 +324,6 @@ C:\Users\Sevgül KETENCİ\Source\Repos\Portföy\Portöy\obj\Debug\net5.0\Portfol
 C:\Users\Sevgül KETENCİ\Source\Repos\Portföy\Portöy\obj\Debug\net5.0\Portfolyo.AssemblyInfoInputs.cache
 C:\Users\Sevgül KETENCİ\Source\Repos\Portföy\Portöy\obj\Debug\net5.0\Portfolyo.AssemblyInfo.cs
 C:\Users\Sevgül KETENCİ\Source\Repos\Portföy\Portöy\obj\Debug\net5.0\Portfolyo.csproj.CoreCompileInputs.cache
-C:\Users\Sevgül KETENCİ\Source\Repos\Portföy\Portöy\obj\Debug\net5.0\Portfolyo.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Sevgül KETENCİ\Source\Repos\Portföy\Portöy\obj\Debug\net5.0\Portfolyo.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Sevgül KETENCİ\Source\Repos\Portföy\Portöy\obj\Debug\net5.0\Portfolyo.RazorAssemblyInfo.cache
 C:\Users\Sevgül KETENCİ\Source\Repos\Portföy\Portöy\obj\Debug\net5.0\Portfolyo.RazorAssemblyInfo.cs
 C:\Users\Sevgül KETENCİ\Source\Repos\Portföy\Portöy\obj\Debug\net5.0\staticwebassets\Portfolyo.StaticWebAssets.Manifest.cache

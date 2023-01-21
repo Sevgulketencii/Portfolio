@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ir1DZZONpBpLJdpSn7zsopsAxafoLGK0a0rI/tyG5owfwJe7idX/P6wx2DU3YdVkOdRifMP69x5om005tWCoBQ==",
+  "dgSpecHash": "0j75kNJfZTu1HvJdqwXxO3h1YrfxElNg2dHI0RhYjBMoBCiDITqNmYajb0iPm2NREcYa37JYmdV7hkH1P/U3oA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Sevgül KETENCİ\\Source\\Repos\\Portföy\\BusinessLayer\\BusinessLayer.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Sevgül KETENCİ\\.nuget\\packages\\fluentvalidation\\11.4.0\\fluentvalidation.11.4.0.nupkg.sha512",
     "C:\\Users\\Sevgül KETENCİ\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\Sevgül KETENCİ\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Sevgül KETENCİ\\.nuget\\packages\\microsoft.aspnetcore.authentication.cookies\\2.2.0\\microsoft.aspnetcore.authentication.cookies.2.2.0.nupkg.sha512",

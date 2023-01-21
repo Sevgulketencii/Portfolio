@@ -47,6 +47,31 @@ namespace Portfolyo.Areas.Admin.Controllers
             return RedirectToAction("Certificate");
         }
 
+        public IActionResult StatuFalse(int id)
+        {
+            var ctfalse = certificate.IdGore(id);
+            if (ctfalse != null)
+            {
+                ctfalse.CertificateStatus = false;
+                certificate.güncelle(ctfalse);
+
+            }
+            return RedirectToAction("Certificate");
+        }
+
+
+        public IActionResult StatuTrue(int id)
+        {
+            var ctTrue = certificate.IdGore(id);
+            if (ctTrue != null)
+            {
+                ctTrue.CertificateStatus = true;
+                certificate.güncelle(ctTrue);
+
+            }
+            return RedirectToAction("Certificate");
+        }
+
 
         public IActionResult Delete(int id)
         {

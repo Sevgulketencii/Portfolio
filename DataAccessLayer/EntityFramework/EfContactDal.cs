@@ -15,9 +15,9 @@ namespace DataAccessLayer.EntityFramework
     {
         Context baglan = new Context();
 
-        public List<Contact> HeaderContact(Expression<Func<Contact, bool>> filtre)
+        public List<Contact> HeaderContact()
         {
-            return baglan.ContactDb.Where(filtre).Take(4).ToList();
+            return baglan.ContactDb.Where(x=>x.ContactStatus==true).ToList();
         }
     }
 }

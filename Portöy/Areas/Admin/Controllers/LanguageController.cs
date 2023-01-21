@@ -41,6 +41,32 @@ namespace Portfolyo.Areas.Admin.Controllers
             return RedirectToAction("Language");
         }
 
+        public IActionResult StatuFalse(int id)
+        {
+            var lnFalse = language.IdGore(id);
+            if (lnFalse != null)
+            {
+                lnFalse.LanguageStatus = false;
+                language.güncelle(lnFalse);
+
+            }
+            return RedirectToAction("Language");
+        }
+
+
+        public IActionResult StatuTrue(int id)
+        {
+            var lnTrue = language.IdGore(id);
+            if (lnTrue != null)
+            {
+                lnTrue.LanguageStatus = true;
+                language.güncelle(lnTrue);
+
+            }
+            return RedirectToAction("Language");
+        }
+
+
         public IActionResult Delete(int id)
         {
             var silinen = language.IdGore(id);

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "9NGBO5mf6X5KK7afpsKQmdBG130DT+M4reA79a0cq+TsyshmnUKK9dyIgUcm6u+wxxX7HPn7tw3Va0N8o0VsQg==",
+  "dgSpecHash": "WG+Wsi5jF4Lp60CCaF3H/xwF/4aJpICfIlPkfvcM4YZQySlRdk9c9tEFCMIOJ7thTxJgdceG1FpVXbFygHEHXg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Sevgül KETENCİ\\Source\\Repos\\Portföy\\Portöy\\Portfolyo.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Sevgül KETENCİ\\.nuget\\packages\\fluentvalidation\\11.4.0\\fluentvalidation.11.4.0.nupkg.sha512",
     "C:\\Users\\Sevgül KETENCİ\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Sevgül KETENCİ\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\Sevgül KETENCİ\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

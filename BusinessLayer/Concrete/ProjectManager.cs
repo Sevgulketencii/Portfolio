@@ -39,6 +39,11 @@ namespace BusinessLayer.Concrete
             return _project.Listele();
         }
 
+        public List<Project> ListOnay()
+        {
+            return _project.ListOnay();
+        }
+
         public void sil(Project silinen)
         {
             _project.sil(silinen);

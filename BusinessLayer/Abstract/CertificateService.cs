@@ -9,5 +9,6 @@ namespace BusinessLayer.Abstract
 {
     public interface CertificateService:GenericService<Certificate>
     {
+        List<Certificate> ListeOnay();
     }
 }

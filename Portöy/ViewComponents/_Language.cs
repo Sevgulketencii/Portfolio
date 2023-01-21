@@ -13,7 +13,7 @@ namespace Portfolyo.ViewComponents
         LanguageManager language = new LanguageManager(new EfLanguageDal());
         public IViewComponentResult Invoke()
         {
-            var list = language.list();
+            var list = language.ListOnay();
             return View(list);
         }
     }

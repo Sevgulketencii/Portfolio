@@ -34,6 +34,8 @@ namespace DataAccessLayer.GenericRepository
             return baglan.Set<Table>().ToList();
         }
 
+       
+
         public void sil(Table silinen)
         {
             baglan.Set<Table>().Remove(silinen);

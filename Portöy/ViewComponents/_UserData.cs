@@ -17,9 +17,9 @@ namespace Portfolyo.ViewComponents
         public IViewComponentResult Invoke()
         {
             ViewBag.deneyim = about.list().Select(x => x.WorkingYear).FirstOrDefault();
-            ViewBag.projectCount = project.list().Count();
-            ViewBag.certificateCount = certificate.list().Count();
-            ViewBag.languageCount = language.list().Count();
+            ViewBag.projectCount = project.ListOnay().Count();
+            ViewBag.certificateCount = certificate.ListeOnay().Count();
+            ViewBag.languageCount = language.ListOnay().Count();
             return View();
         }
     }

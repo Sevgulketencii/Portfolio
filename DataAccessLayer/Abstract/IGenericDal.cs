@@ -13,5 +13,6 @@ namespace DataAccessLayer.Abstract
         void sil(Table silinen);
         void guncelle(Table guncellenen);
         Table GetId(int id);
+    
     }
 }

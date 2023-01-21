@@ -13,7 +13,7 @@ namespace Portfolyo.ViewComponents
         CertificateManager certificate = new CertificateManager(new EfCertificateDal());
         public IViewComponentResult Invoke()
         {
-            var veri = certificate.list();
+            var veri = certificate.ListeOnay();
             return View(veri);
         }
     }

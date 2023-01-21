@@ -13,7 +13,7 @@ namespace Portfolyo.ViewComponents
         ProjectManager project = new ProjectManager(new EfProjectDal());
         public IViewComponentResult Invoke()
         {
-            var list = project.list();
+            var list = project.ListOnay();
             return View(list);
         }
     }

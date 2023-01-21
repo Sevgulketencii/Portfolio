@@ -38,6 +38,11 @@ namespace BusinessLayer.Concrete
             return _language.Listele();
         }
 
+        public List<Language> ListOnay()
+        {
+            return _language.ListOnay();
+        }
+
         public void sil(Language silinen)
         {
             _language.sil(silinen);

@@ -1,0 +1,79 @@
+﻿
+@{
+    ViewData["Title"] = "Project";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+@using EntityLayer.Concrete
+@model List<Project>
+<div class="table-responsive m-b-40" style="margin-top:100px">
+    <table class="table table-borderless table-data3">
+        <thead>
+            <tr>
+                <th>Proje Id</th>
+                <th>Proje Adı</th>
+                <th>Proje Başlık</th>
+                <th>Proje Açıklama</th>
+                <th>Tarih</th>
+                <th>Img Url</th>
+                <th>Statü</th>
+                <th>Güncelle</th>
+                <th>Yayına Al</th>
+                <th>Yayından Kaldır</th>
+                <th>SİL</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.ProjectId</td>
+                    <td>@item.ProjectName</td>
+                    <td>@item.ProjectTitle</td>
+                    <td>@item.ProjectDescription</td>
+                    <td>@item.ProjectDate</td>
+                    <td>@item.ProjectImgUrl</td>
+                    @if (item.ProjectStatus == true)
+                    {
+                        <td class="process">Yayında</td>
+                    }
+                    else
+                    {
+                        <td class="denied">Pasif</td>
+                    }
+                    <td><a href="/Admin/Project/Update/@item.ProjectId" class="btn btn-primary btn-sm">Güncelle</a></td>
+                    <td><a href="/Admin/Project/StatuTrue/@item.ProjectId" class="btn btn-info btn-sm">Aktif</a></td>
+                    <td><a href="/Admin/Project/StatuFalse/@item.ProjectId" class="btn btn-warning btn-sm">Pasif</a></td>
+                    <td><a href="/Admin/Project/Delete/@item.ProjectId" onclick="confirm('Proje Siliniyor Emin misin ?')" class="btn btn-danger btn-sm">SİL</a></td>
+                </tr>
+            }
+
+        </tbody>
+    </table><br />
+
+    <a href="/Admin/Project/ProjectAdd" class="btn btn-success btn-block">Ekle</a>
+
+</div>
+
+<div class="main-content" style="margin-top:-80px">
+    <div class="section__content section__content--p30">
+        <div class="container-fluid">
+            <div class="row">
+                @foreach (var item in Model)
+                {
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="@item.ProjectImgUrl" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title mb-3">@item.ProjectName</h4>
+                                <p class="card-text">
+                                    @item.ProjectTitle
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </div>
+    </div>
+</div>

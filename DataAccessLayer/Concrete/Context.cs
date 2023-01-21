@@ -20,6 +20,7 @@ namespace DataAccessLayer.Concrete
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            //optionsBuilder.UseSqlServer("server=77.245.159.27\\MSSQLSERVER2019;database=PortfolyoDb;user=adminsevgul;password=Nisanur55.");
             optionsBuilder.UseSqlServer("server=DESKTOP-KCH0A99;database=PortfolyoDb;integrated security=true");
         }
     }

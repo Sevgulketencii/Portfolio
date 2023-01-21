@@ -17,6 +17,8 @@
                 <th>Yeterlilik URL</th>
                 <th>Statü</th>
                 <th>Güncelle</th>
+                <th>Yayına Al</th>
+                <th>Yayından Kaldır</th>
                 <th>Sil</th>
             </tr>
         </thead>
@@ -36,8 +38,10 @@
                 {
                     <td class="denied">Pasif</td>
                 }
-                <td><a href="/Admin/Certificate/Update/@item.CertificateId" class="btn btn-warning btn-sm">Güncelle</a></td>
-                <td><a href="/Admin/Certificate/Delete/@item.CertificateId" class="btn btn-danger btn-sm">Sil</a></td>
+                <td><a href="/Admin/Certificate/Update/@item.CertificateId" class="btn btn-primary btn-sm">Güncelle</a></td>
+                <td><a href="/Admin/Certificate/StatuTrue/@item.CertificateId" class="btn btn-info btn-sm">Aktif</a></td>
+                <td><a href="/Admin/Certificate/StatuFalse/@item.CertificateId" class="btn btn-warning btn-sm">Pasif</a></td>
+                <td><a href="/Admin/Certificate/Delete/@item.CertificateId" onclick="confirm('Sertifika Siliniyor Emin misin ?')" class="btn btn-danger btn-sm">Sil</a></td>
             </tr>
             }
 

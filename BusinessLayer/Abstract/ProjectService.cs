@@ -9,5 +9,6 @@ namespace BusinessLayer.Abstract
 {
     public interface ProjectService : GenericService<Project>
     {
+        List<Project> ListOnay();
     }
 }

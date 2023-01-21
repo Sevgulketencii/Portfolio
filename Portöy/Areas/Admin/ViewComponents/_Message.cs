@@ -15,6 +15,7 @@ namespace Portfolyo.Areas.Admin.ViewComponents
         public IViewComponentResult Invoke()
         {
             var veri = contact.HeaderContact();
+            TempData["Count"] = veri.Count();
             return View(veri);
         }
     }

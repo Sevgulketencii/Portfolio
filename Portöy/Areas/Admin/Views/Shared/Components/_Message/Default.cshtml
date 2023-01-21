@@ -5,10 +5,10 @@
 
 <div class="noti__item js-item-menu">
     <i class="zmdi zmdi-email"></i>
-    <span class="quantity">1</span>
+    <span class="quantity">@TempData["Count"]</span>
     <div class="email-dropdown js-dropdown">
         <div class="email__title">
-            <p>Okunmayan 1 İleti</p>
+            <p>Okunmayan İletiler</p>
         </div>
         @foreach (var item in Model)
         {
@@ -18,14 +18,14 @@
                 </div>
                 <div class="content">
                     <p>@item.ContactMail</p>
-                    <span>@item.ContactName, 1 min ago</span>
+                    <span>@item.ContactName</span>
                 </div>
             </div>
         }
 
 
         <div class="email__footer">
-            <a href="#">Mesajların Tümünü Gör</a>
+            <a href="/Admin/Contact/Contact">Mesajların Tümünü Gör</a>
         </div>
     </div>
 </div>

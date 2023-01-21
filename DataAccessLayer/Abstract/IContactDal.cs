@@ -10,6 +10,6 @@ namespace DataAccessLayer.Abstract
 {
     public interface IContactDal:IGenericDal<Contact>
     {
-        List<Contact> HeaderContact(Expression<Func<Contact,bool>>filtre);
+        List<Contact> HeaderContact();
     }
 }

@@ -9,5 +9,6 @@ namespace BusinessLayer.Abstract
 {
     public interface LanguageService : GenericService<Language>
     {
+        List<Language> ListOnay();
     }
 }
